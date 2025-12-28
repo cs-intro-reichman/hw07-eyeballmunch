@@ -10,11 +10,13 @@ public class IntToBin {
     public static String toBinary(int x) {
         //// Replace the following statement with your code
         
-        if (x ==0){
-            return "";
+        if (x == 0) {
+            return "0";
         }
-
-       
-        return toBinary (x / 2) + (x % 2);
+        if (x == 1) {
+            return "1";
+        }
+        
+        return toBinary(x / 2) + (x % 2);
     }    
  }
